@@ -1,0 +1,24 @@
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dependencias
+node_modules/
+
+# Variaveis de ambiente locais
+.env
+.env.*
+
+# Logs de ferramentas
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
