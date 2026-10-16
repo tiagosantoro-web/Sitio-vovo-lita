@@ -8,29 +8,38 @@ const WHATSAPP_MESSAGE = 'Olá! Vi o site do sítio e gostaria de consultar disp
 const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Rua Guilhermina Coelho, 460, Miraflor, Itapevi, SP');
 const INSTAGRAM_URL = ''; // Cole o endereço HTTPS do perfil oficial quando estiver disponível.
 
-// FOTOS: substitua os SVGs por fotos reais e atualize src para .jpg, .webp ou .avif e alt.
-// Para adicionar/remover fotos, duplique/exclua objetos. Cada arquivo abaixo é uma ilustração provisória.
+// FOTOS: para adicionar/remover fotos, duplique/exclua objetos. As 5 primeiras aparecem na página; a primeira fica em destaque.
+// "category" define o filtro. Os filtros da página usam: Área externa, Piscina, Quartos e Churrasqueira.
 const GALERIA = [
-  { src: 'assets/images/sitio-01.svg', category: 'Área externa', title: 'O lado de fora, do seu jeito', alt: 'Área externa — imagem ilustrativa' },
-  { src: 'assets/images/sitio-02.svg', category: 'Piscina', title: 'Um mergulho na tranquilidade', alt: 'Piscina — imagem ilustrativa' },
-  { src: 'assets/images/sitio-03.svg', category: 'Quartos', title: 'Para recarregar as energias', alt: 'Quarto — imagem ilustrativa' },
-  { src: 'assets/images/sitio-04.svg', category: 'Churrasqueira', title: 'Sabores e boas conversas', alt: 'Churrasqueira — imagem ilustrativa' },
-  { src: 'assets/images/sitio-05.svg', category: 'Área verde', title: 'Natureza por todos os lados', alt: 'Área verde — imagem ilustrativa' },
-  { src: 'assets/images/sitio-06.svg', category: 'Área externa', title: 'Espaço para aproveitar', alt: 'Jardim — imagem ilustrativa' },
-  { src: 'assets/images/sitio-07.svg', category: 'Piscina', title: 'Dias de sol', alt: 'Área da piscina — imagem ilustrativa' },
-  { src: 'assets/images/sitio-08.svg', category: 'Quartos', title: 'Seu cantinho de descanso', alt: 'Acomodação — imagem ilustrativa' },
-  { src: 'assets/images/sitio-09.svg', category: 'Salão', title: 'Tempo para estar junto', alt: 'Salão — imagem ilustrativa' },
-  { src: 'assets/images/sitio-10.svg', category: 'Churrasqueira', title: 'A mesa está esperando', alt: 'Área gourmet — imagem ilustrativa' },
-  { src: 'assets/images/sitio-11.svg', category: 'Área verde', title: 'Respire fundo', alt: 'Paisagem verde — imagem ilustrativa' },
-  { src: 'assets/images/sitio-12.svg', category: 'Cozinha', title: 'Sabores de casa', alt: 'Cozinha — imagem ilustrativa' },
-  { src: 'assets/images/sitio-13.svg', category: 'Banheiros', title: 'Cuidado nos detalhes', alt: 'Banheiro — imagem ilustrativa' },
-  { src: 'assets/images/sitio-14.svg', category: 'Área de lazer', title: 'Dias para aproveitar', alt: 'Lazer — imagem ilustrativa' },
-  { src: 'assets/images/sitio-15.svg', category: 'Vista do local', title: 'Um horizonte de calma', alt: 'Vista da paisagem — imagem ilustrativa' },
-  { src: 'assets/images/sitio-16.svg', category: 'Quartos', title: 'Uma boa noite começa aqui', alt: 'Quarto adicional — imagem ilustrativa' },
-  { src: 'assets/images/sitio-17.svg', category: 'Salão', title: 'Onde a conversa acontece', alt: 'Área de convivência — imagem ilustrativa' },
-  { src: 'assets/images/sitio-18.svg', category: 'Área externa', title: 'Bem-vindo ao campo', alt: 'Entrada do sítio — imagem ilustrativa' },
-  { src: 'assets/images/sitio-19.svg', category: 'Área de lazer', title: 'Seu ritmo, seu momento', alt: 'Área de descanso — imagem ilustrativa' },
-  { src: 'assets/images/sitio-20.svg', category: 'Vista do local', title: 'Até o sol se despedir', alt: 'Entardecer no campo — imagem ilustrativa' }
+  { src: 'assets/images/piscina-vista-jardim.jpg', category: 'Piscina', title: 'Um mergulho na tranquilidade', alt: 'Piscina vista do jardim, com área coberta ao fundo' },
+  { src: 'assets/images/portao-entrada.jpg', category: 'Área externa', title: 'Bem-vindo ao Vovó Lita', alt: 'Portão de entrada do sítio com a placa' },
+  { src: 'assets/images/salao-jogos-sinuca.jpg', category: 'Área de lazer', title: 'Partidas sem pressa', alt: 'Salão de jogos com mesas de sinuca' },
+  { src: 'assets/images/churrasqueira.jpg', category: 'Churrasqueira', title: 'Sabores e boas conversas', alt: 'Churrasqueira de tijolos com pia e bancada' },
+  { src: 'assets/images/quarto-01-beliches.jpg', category: 'Quartos', title: 'Para recarregar as energias', alt: 'Quarto com beliches' },
+  { src: 'assets/images/piscina-palmeiras.jpg', category: 'Piscina', title: 'Dias de sol', alt: 'Piscina cercada por palmeiras' },
+  { src: 'assets/images/piscina-ceu-azul.jpg', category: 'Piscina', title: 'Céu azul e água fresca', alt: 'Piscina com céu azul e árvores ao redor' },
+  { src: 'assets/images/piscina-borda.jpg', category: 'Piscina', title: 'Um respiro na água', alt: 'Borda da piscina com vegetação ao fundo' },
+  { src: 'assets/images/casa-lateral.jpg', category: 'Área externa', title: 'A casa do sítio', alt: 'Lateral da casa principal' },
+  { src: 'assets/images/corredor-externo.jpg', category: 'Área externa', title: 'Caminhos ao ar livre', alt: 'Corredor externo ao lado da casa' },
+  { src: 'assets/images/varanda-gramado.jpg', category: 'Área externa', title: 'Varanda de frente para o verde', alt: 'Varanda ao lado do gramado' },
+  { src: 'assets/images/caminho-quiosque.jpg', category: 'Área externa', title: 'Espaço para aproveitar', alt: 'Caminho até o quiosque' },
+  { src: 'assets/images/area-churrasqueira.jpg', category: 'Churrasqueira', title: 'Tudo pronto para o churrasco', alt: 'Área da churrasqueira com freezer' },
+  { src: 'assets/images/cozinha.jpg', category: 'Cozinha', title: 'Sabores de casa', alt: 'Cozinha com fogão, geladeira e mesa' },
+  { src: 'assets/images/salao-jogos.jpg', category: 'Área de lazer', title: 'Sinuca e pebolim', alt: 'Salão de jogos com sinuca e pebolim' },
+  { src: 'assets/images/campo-futebol.jpg', category: 'Área de lazer', title: 'Bola rolando no gramado', alt: 'Campo de futebol gramado' },
+  { src: 'assets/images/parquinho.jpg', category: 'Área de lazer', title: 'Diversão para as crianças', alt: 'Parquinho com gangorra' },
+  { src: 'assets/images/parquinho-balanco.jpg', category: 'Área de lazer', title: 'Balanço à sombra', alt: 'Parquinho com balanço sob as árvores' },
+  { src: 'assets/images/salao-amplo.jpg', category: 'Salão', title: 'Tempo para estar junto', alt: 'Salão amplo e iluminado' },
+  { src: 'assets/images/salao-iluminado.jpg', category: 'Salão', title: 'Onde a conversa acontece', alt: 'Salão com luz natural' },
+  { src: 'assets/images/quarto-02.jpg', category: 'Quartos', title: 'Seu cantinho de descanso', alt: 'Quarto com beliche e cama de casal' },
+  { src: 'assets/images/quarto-03.jpg', category: 'Quartos', title: 'Uma boa noite começa aqui', alt: 'Quarto com beliches' },
+  { src: 'assets/images/area-verde-casa.jpg', category: 'Área verde', title: 'Natureza por todos os lados', alt: 'Gramado e árvores ao lado da casa' },
+  { src: 'assets/images/jardim-piscina.jpg', category: 'Área verde', title: 'Respire fundo', alt: 'Jardim com caminho de pedras até a piscina' },
+  { src: 'assets/images/vista-do-alto-campo.jpg', category: 'Vista do local', title: 'Um horizonte de calma', alt: 'Vista do alto do gramado e do campo' }
+  // FOTOS DE DRONE: salve como assets/images/drone-01.jpg, drone-02.jpg... e descomente as linhas abaixo.
+  // , { src: 'assets/images/drone-01.jpg', category: 'Vista aérea', title: 'O sítio visto do alto', alt: 'Vista aérea do sítio' }
+  // , { src: 'assets/images/drone-02.jpg', category: 'Vista aérea', title: 'Cercado de verde', alt: 'Vista aérea da área verde' }
+  // , { src: 'assets/images/drone-03.jpg', category: 'Vista aérea', title: 'Piscina e jardim', alt: 'Vista aérea da piscina' }
 ];
 /* ======================================== CONFIGURAÇÃO - FIM ======================================== */
 
@@ -166,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     galleryGrid.replaceChildren(fragment);
     $('#sv-gallery-count').textContent = photos.length;
-    $('#sv-gallery-status').textContent = photos.length + ' imagens ilustrativas · fotografias reais em breve';
+    $('#sv-gallery-status').textContent = photos.length + (photos.length === 1 ? ' foto' : ' fotos') + ' do sítio · toque para ampliar';
     $$('.sv-filter').forEach((button) => {
       const active = button.dataset.filter === category;
       button.classList.toggle('is-active', active); button.setAttribute('aria-pressed', String(active));
