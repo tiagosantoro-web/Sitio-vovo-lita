@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
       button.className = 'sv-gallery-photo'; button.type = 'button';
       button.dataset.photo = String(GALERIA.indexOf(photo)); button.setAttribute('aria-label', 'Ampliar: ' + photo.alt);
       const img = document.createElement('img');
-      img.src = photo.src; img.alt = photo.alt; img.loading = 'lazy'; img.width = 900; img.height = 700;
+      img.src = photo.src; img.alt = photo.alt; img.loading = 'lazy'; img.decoding = 'async'; img.width = 720; img.height = 1280;
       const label = document.createElement('span'); label.textContent = photo.title;
       button.append(img, label); fragment.append(button);
     });
