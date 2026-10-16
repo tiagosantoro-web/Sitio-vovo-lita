@@ -9,7 +9,7 @@ const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIC
 const INSTAGRAM_URL = ''; // Cole o endereço HTTPS do perfil oficial quando estiver disponível.
 
 // FOTOS: para adicionar/remover fotos, duplique/exclua objetos. As 5 primeiras aparecem na página; a primeira fica em destaque.
-// "category" define o filtro. Os filtros da página usam: Área externa, Piscina, Quartos e Churrasqueira.
+// "category" define o filtro. Os filtros da página usam: Área externa, Piscina, Quartos, Churrasqueira e Área de lazer.
 const GALERIA = [
   { src: 'assets/images/piscina-vista-jardim.jpg', category: 'Piscina', title: 'Um mergulho na tranquilidade', alt: 'Piscina vista do jardim, com área coberta ao fundo' },
   { src: 'assets/images/portao-entrada.jpg', category: 'Área externa', title: 'Bem-vindo ao Vovó Lita', alt: 'Portão de entrada do sítio com a placa' },
