@@ -9,7 +9,7 @@ const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIC
 const INSTAGRAM_URL = ''; // Cole o endereço HTTPS do perfil oficial quando estiver disponível.
 
 // FOTOS: para adicionar/remover fotos, duplique/exclua objetos. As 5 primeiras aparecem na página; a primeira fica em destaque.
-// "category" define o filtro. Os filtros da página usam: Área externa, Piscina, Quartos, Churrasqueira e Área de lazer.
+// "category" define o filtro. Os filtros da página usam: Área externa, Piscina, Quartos, Churrasqueira, Área de lazer e Vista aérea.
 const GALERIA = [
   { src: 'assets/images/piscina-vista-jardim.jpg', category: 'Piscina', title: 'Um mergulho na tranquilidade', alt: 'Piscina vista do jardim, com área coberta ao fundo' },
   { src: 'assets/images/portao-entrada.jpg', category: 'Área externa', title: 'Bem-vindo ao Vovó Lita', alt: 'Portão de entrada do sítio com a placa' },
@@ -35,11 +35,10 @@ const GALERIA = [
   { src: 'assets/images/quarto-03.jpg', category: 'Quartos', title: 'Uma boa noite começa aqui', alt: 'Quarto com beliches' },
   { src: 'assets/images/area-verde-casa.jpg', category: 'Área verde', title: 'Natureza por todos os lados', alt: 'Gramado e árvores ao lado da casa' },
   { src: 'assets/images/jardim-piscina.jpg', category: 'Área verde', title: 'Respire fundo', alt: 'Jardim com caminho de pedras até a piscina' },
-  { src: 'assets/images/vista-do-alto-campo.jpg', category: 'Vista do local', title: 'Um horizonte de calma', alt: 'Vista do alto do gramado e do campo' }
-  // FOTOS DE DRONE: salve como assets/images/drone-01.jpg, drone-02.jpg... e descomente as linhas abaixo.
-  // , { src: 'assets/images/drone-01.jpg', category: 'Vista aérea', title: 'O sítio visto do alto', alt: 'Vista aérea do sítio' }
-  // , { src: 'assets/images/drone-02.jpg', category: 'Vista aérea', title: 'Cercado de verde', alt: 'Vista aérea da área verde' }
-  // , { src: 'assets/images/drone-03.jpg', category: 'Vista aérea', title: 'Piscina e jardim', alt: 'Vista aérea da piscina' }
+  { src: 'assets/images/vista-do-alto-campo.jpg', category: 'Vista do local', title: 'Um horizonte de calma', alt: 'Vista do alto do gramado e do campo' },
+  { src: 'assets/images/drone-01.jpg', category: 'Vista aérea', title: 'O sítio visto do alto', alt: 'Vista aérea do sítio inteiro: gramado, piscina, casa e mata ao redor' },
+  { src: 'assets/images/drone-02.jpg', category: 'Vista aérea', title: 'Cercado de verde', alt: 'Vista aérea da casa, do quiosque e do gramado' },
+  { src: 'assets/images/drone-03.jpg', category: 'Vista aérea', title: 'Piscina e jardim', alt: 'Vista do alto da piscina entre palmeiras' }
 ];
 /* ======================================== CONFIGURAÇÃO - FIM ======================================== */
 

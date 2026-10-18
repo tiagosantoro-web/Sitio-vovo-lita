@@ -10,15 +10,19 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Sítio Vovó Lita | Seu próximo respiro no campo">
   <meta property="og:description" content="Dias sem pressa, natureza por perto e tempo para estar junto. Conheça o Sítio Vovó Lita em Itapevi.">
-  <!-- SEO: ao publicar, use uma URL absoluta de foto REAL JPG/WebP em og:image e adicione og:url e canonical. -->
-  <meta property="og:image" content="assets/images/casa-e-piscina.jpg">
-  <meta property="og:image:alt" content="Casa do Sítio Vovó Lita com piscina e jardim">
+  <!-- SEO: endereço publicado. Se mudar o domínio, troque nas 3 linhas abaixo e no "url" do JSON-LD. -->
+  <link rel="canonical" href="https://sitiovovolita.netlify.app/">
+  <meta property="og:url" content="https://sitiovovolita.netlify.app/">
+  <meta property="og:image" content="https://sitiovovolita.netlify.app/assets/images/drone-02.jpg">
+  <meta property="og:image:alt" content="Vista aérea da casa e do gramado do Sítio Vovó Lita">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
   <!-- SEO LOCAL: somente dados reais fornecidos. Acrescente URL e fotos reais ao publicar. -->
   <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"LodgingBusiness","name":"Sítio e Chácara Vovó Lita","description":"Sítio para aluguel por temporada em Miraflor, Itapevi, São Paulo.","telephone":"+5511967231749","petsAllowed":true,"address":{"@type":"PostalAddress","streetAddress":"Rua Guilhermina Coelho, 460, Miraflor","addressLocality":"Itapevi","addressRegion":"SP","addressCountry":"BR"}}
+    {"@context":"https://schema.org","@type":"LodgingBusiness","name":"Sítio e Chácara Vovó Lita","description":"Sítio para aluguel por temporada em Miraflor, Itapevi, São Paulo.","url":"https://sitiovovolita.netlify.app/","image":"https://sitiovovolita.netlify.app/assets/images/drone-01.jpg","telephone":"+5511967231749","petsAllowed":true,"address":{"@type":"PostalAddress","streetAddress":"Rua Guilhermina Coelho, 460, Miraflor","addressLocality":"Itapevi","addressRegion":"SP","addressCountry":"BR"}}
   </script>
 </head>
 <body class="sv-site">
@@ -99,7 +103,7 @@
     <!-- ======================================== GALERIA - INÍCIO ======================================== -->
     <section class="sv-section sv-section--sand" id="galeria"><div class="sv-container">
       <div class="sv-section-heading sv-reveal"><div><p class="sv-eyebrow">UM POUQUINHO DO QUE TE ESPERA</p><h2>Imagine você <em>aqui.</em></h2></div><p>Cada cantinho, um convite para ficar. <br>Explore os espaços do seu próximo descanso.</p></div>
-      <div class="sv-gallery-filters" role="group" aria-label="Filtrar fotos por ambiente"><button class="sv-filter is-active" data-filter="Todas" aria-pressed="true" type="button">Todos os espaços</button><button class="sv-filter" data-filter="Área externa" aria-pressed="false" type="button">Área externa</button><button class="sv-filter" data-filter="Piscina" aria-pressed="false" type="button">Piscina</button><button class="sv-filter" data-filter="Quartos" aria-pressed="false" type="button">Acomodações</button><button class="sv-filter" data-filter="Churrasqueira" aria-pressed="false" type="button">Churrasqueira</button><button class="sv-filter" data-filter="Área de lazer" aria-pressed="false" type="button">Lazer</button></div>
+      <div class="sv-gallery-filters" role="group" aria-label="Filtrar fotos por ambiente"><button class="sv-filter is-active" data-filter="Todas" aria-pressed="true" type="button">Todos os espaços</button><button class="sv-filter" data-filter="Área externa" aria-pressed="false" type="button">Área externa</button><button class="sv-filter" data-filter="Piscina" aria-pressed="false" type="button">Piscina</button><button class="sv-filter" data-filter="Quartos" aria-pressed="false" type="button">Acomodações</button><button class="sv-filter" data-filter="Churrasqueira" aria-pressed="false" type="button">Churrasqueira</button><button class="sv-filter" data-filter="Área de lazer" aria-pressed="false" type="button">Lazer</button><button class="sv-filter" data-filter="Vista aérea" aria-pressed="false" type="button">Vista aérea</button></div>
       <!-- As fotos da galeria vêm da lista GALERIA em js/script.js (as 5 primeiras aparecem aqui). -->
       <div class="sv-gallery-grid" id="sv-gallery-grid">
         <button class="sv-gallery-photo" data-photo="0" type="button" aria-label="Ampliar: Piscina vista do jardim"><img src="assets/images/piscina-vista-jardim.jpg" alt="Piscina vista do jardim, com área coberta ao fundo" width="720" height="1280" loading="lazy" decoding="async"><span>Um mergulho na tranquilidade</span></button>
@@ -108,20 +112,17 @@
         <button class="sv-gallery-photo" data-photo="3" type="button" aria-label="Ampliar: Churrasqueira"><img src="assets/images/churrasqueira.jpg" alt="Churrasqueira de tijolos com pia e bancada" width="720" height="1280" loading="lazy" decoding="async"><span>Sabores e boas conversas</span></button>
         <button class="sv-gallery-photo" data-photo="4" type="button" aria-label="Ampliar: Quarto com beliches"><img src="assets/images/quarto-01-beliches.jpg" alt="Quarto com beliches" width="720" height="1280" loading="lazy" decoding="async"><span>Para recarregar as energias</span></button>
       </div>
-      <div class="sv-gallery-bottom"><p class="sv-fine-print" id="sv-gallery-status" aria-live="polite">25 fotos do sítio · toque para ampliar</p><button class="sv-button sv-button--outline" id="sv-open-gallery" type="button"><svg class="sv-icon"><use href="#sv-grid"/></svg>Ver todas as fotos <span id="sv-gallery-count">25</span></button></div>
+      <div class="sv-gallery-bottom"><p class="sv-fine-print" id="sv-gallery-status" aria-live="polite">28 fotos do sítio · toque para ampliar</p><button class="sv-button sv-button--outline" id="sv-open-gallery" type="button"><svg class="sv-icon"><use href="#sv-grid"/></svg>Ver todas as fotos <span id="sv-gallery-count">28</span></button></div>
     </div></section>
     <!-- ======================================== GALERIA - FIM ======================================== -->
 
     <!-- ======================================== VISTA AÉREA (DRONE) - INÍCIO ======================================== -->
-    <!-- FOTOS DE DRONE: salve em assets/images/drone-01.jpg, drone-02.jpg e drone-03.jpg (horizontais, 1600px+ de largura).
-         Em cada figure, troque o <div class="sv-drone-empty">...</div> por:
-         <img src="assets/images/drone-01.jpg" alt="Descreva a foto" width="1920" height="1080" loading="lazy" decoding="async"> -->
     <section class="sv-section" id="vista-aerea"><div class="sv-container">
       <div class="sv-section-heading sv-reveal"><div><p class="sv-eyebrow">O SÍTIO VISTO DO ALTO</p><h2>Ainda mais bonito <em>lá de cima.</em></h2></div><p>Verde a perder de vista, <br>espaço de sobra para aproveitar.</p></div>
       <div class="sv-drone-grid">
-        <figure class="sv-drone-slot sv-reveal"><div class="sv-drone-empty"><svg class="sv-icon"><use href="#sv-sun"/></svg><span>Foto aérea 01 · em breve</span></div></figure>
-        <figure class="sv-drone-slot sv-reveal"><div class="sv-drone-empty"><svg class="sv-icon"><use href="#sv-leaf"/></svg><span>Foto aérea 02 · em breve</span></div></figure>
-        <figure class="sv-drone-slot sv-reveal"><div class="sv-drone-empty"><svg class="sv-icon"><use href="#sv-pool"/></svg><span>Foto aérea 03 · em breve</span></div></figure>
+        <figure class="sv-drone-slot sv-reveal"><img src="assets/images/drone-01.jpg" alt="Vista aérea do sítio inteiro: gramado, piscina, casa e mata ao redor" width="1920" height="1080" loading="lazy" decoding="async"></figure>
+        <figure class="sv-drone-slot sv-reveal"><img src="assets/images/drone-02.jpg" alt="Vista aérea da casa, do quiosque e do gramado cercados de verde" width="1920" height="1080" loading="lazy" decoding="async"></figure>
+        <figure class="sv-drone-slot sv-reveal"><img src="assets/images/drone-03.jpg" alt="Vista do alto da piscina entre palmeiras e do jardim ao lado da casa" width="1528" height="729" loading="lazy" decoding="async"></figure>
       </div>
     </div></section>
     <!-- ======================================== VISTA AÉREA (DRONE) - FIM ======================================== -->
@@ -142,19 +143,20 @@
         <article class="sv-amenity sv-reveal"><svg class="sv-icon"><use href="#sv-paw"/></svg><h3>Pets bem-vindos</h3><p>Seu animal de estimação também pode vir.</p></article>
         <article class="sv-amenity sv-reveal"><svg class="sv-icon"><use href="#sv-bed"/></svg><h3>8 quartos</h3><p>Até 50 pessoas para dormir no local.</p></article>
         <article class="sv-amenity sv-reveal"><svg class="sv-icon"><use href="#sv-bath"/></svg><h3>Banheiros</h3><p>Conforto e praticidade para o seu grupo.</p></article>
-        <article class="sv-amenity sv-reveal"><svg class="sv-icon"><use href="#sv-home"/></svg><h3>Salão</h3><p>Para reunir as pessoas e os bons momentos.</p></article>      </div><p class="sv-fine-print sv-center">Estrutura demonstrativa. Comodidades e disponibilidade devem ser confirmadas com o responsável.</p>
+        <article class="sv-amenity sv-reveal"><svg class="sv-icon"><use href="#sv-home"/></svg><h3>Salão</h3><p>Para reunir as pessoas e os bons momentos.</p></article>
+      </div>
     </div></section>
     <!-- ======================================== ESTRUTURA - FIM ======================================== -->
 
     <!-- ======================================== ACOMODAÇÕES - INÍCIO ======================================== -->
     <section class="sv-section sv-section--sand" id="acomodacoes"><div class="sv-container">
       <div class="sv-section-heading sv-reveal"><div><p class="sv-eyebrow">DEPOIS DE UM DIA BEM VIVIDO</p><h2>Conforto para <em>toda a família.</em></h2></div><p>São 8 quartos para acomodar todo o grupo. <br>Uma boa noite de sono faz parte da viagem.</p></div>
-      <!-- QUARTOS: o sítio tem 8 quartos no mesmo padrão. Confirme camas, capacidade e banheiros. -->
+      <!-- QUARTOS: o sítio tem 8 quartos no mesmo padrão. Para detalhar camas/banheiros, adicione um <ul> com <li> após o <p> de cada quarto. -->
       <div class="sv-rooms-grid">
-        <article class="sv-room sv-reveal"><div class="sv-room-photo"><img src="assets/images/quarto-01-beliches.jpg" alt="Quarto com beliches" width="720" height="1280" loading="lazy" decoding="async"></div><div class="sv-room-copy"><h3>Beliches para o grupo</h3><p>Um convite ao descanso.</p><ul><li><svg class="sv-icon"><use href="#sv-bed"/></svg>Camas e capacidade: a confirmar</li><li>Ventilação e banheiro: a confirmar</li></ul></div></article>
-        <article class="sv-room sv-reveal"><div class="sv-room-photo"><img src="assets/images/quarto-02.jpg" alt="Quarto com beliche e cama" width="720" height="1280" loading="lazy" decoding="async"></div><div class="sv-room-copy"><h3>Cama e beliche</h3><p>Seu cantinho de tranquilidade.</p><ul><li><svg class="sv-icon"><use href="#sv-bed"/></svg>Camas e capacidade: a confirmar</li><li>Ventilação e banheiro: a confirmar</li></ul></div></article>
-        <article class="sv-room sv-reveal"><div class="sv-room-photo"><img src="assets/images/quarto-03.jpg" alt="Quarto com beliches e janela" width="720" height="1280" loading="lazy" decoding="async"></div><div class="sv-room-copy"><h3>Ventilação natural</h3><p>Dias leves, noites aconchegantes.</p><ul><li><svg class="sv-icon"><use href="#sv-bed"/></svg>Camas e capacidade: a confirmar</li><li>Ventilação e banheiro: a confirmar</li></ul></div></article>
-        <article class="sv-room sv-reveal"><div class="sv-room-photo"><img src="assets/images/sala-estar.jpg" alt="Sala de estar com sofás" width="720" height="1280" loading="lazy" decoding="async"></div><div class="sv-room-copy"><h3>Sala & espaço extra</h3><p>Mais espaço para estar junto.</p><ul><li><svg class="sv-icon"><use href="#sv-people"/></svg>Acomodação adicional: a confirmar</li><li>Consulte a configuração do espaço</li></ul></div></article>
+        <article class="sv-room sv-reveal"><div class="sv-room-photo"><img src="assets/images/quarto-01-beliches.jpg" alt="Quarto com beliches" width="720" height="1280" loading="lazy" decoding="async"></div><div class="sv-room-copy"><h3>Beliches para o grupo</h3><p>Um convite ao descanso.</p></div></article>
+        <article class="sv-room sv-reveal"><div class="sv-room-photo"><img src="assets/images/quarto-02.jpg" alt="Quarto com beliche e cama" width="720" height="1280" loading="lazy" decoding="async"></div><div class="sv-room-copy"><h3>Cama e beliche</h3><p>Seu cantinho de tranquilidade.</p></div></article>
+        <article class="sv-room sv-reveal"><div class="sv-room-photo"><img src="assets/images/quarto-03.jpg" alt="Quarto com beliches e janela" width="720" height="1280" loading="lazy" decoding="async"></div><div class="sv-room-copy"><h3>Ventilação natural</h3><p>Dias leves, noites aconchegantes.</p></div></article>
+        <article class="sv-room sv-reveal"><div class="sv-room-photo"><img src="assets/images/sala-estar.jpg" alt="Sala de estar com sofás" width="720" height="1280" loading="lazy" decoding="async"></div><div class="sv-room-copy"><h3>Sala & espaço extra</h3><p>Mais espaço para estar junto.</p></div></article>
       </div>
     </div></section>
     <!-- ======================================== ACOMODAÇÕES - FIM ======================================== -->
@@ -212,7 +214,8 @@
     <!-- ======================================== LOCALIZAÇÃO - FIM ======================================== -->
 
     <!-- ======================================== AVALIAÇÕES - INÍCIO ======================================== -->
-    <section class="sv-section sv-section--sand" id="avaliacoes"><div class="sv-container">
+    <!-- OCULTA até existirem avaliações reais: preencha os cards abaixo e remova o atributo hidden da section. -->
+    <section class="sv-section sv-section--sand" id="avaliacoes" hidden><div class="sv-container">
       <div class="sv-heading-center sv-reveal"><p class="sv-eyebrow">HISTÓRIAS DE QUEM JÁ PASSOU POR AQUI</p><h2>Quem conhece, <em>recomenda.</em></h2><p>Este espaço será preenchido com avaliações reais de hóspedes.</p></div>
       <!-- PLACEHOLDERS: preencher nomes, estrelas, notas e comentários somente com avaliações reais. -->
       <div class="sv-review-grid">
@@ -247,7 +250,7 @@
   </main>
 
   <!-- ======================================== FOOTER - INÍCIO ======================================== -->
-  <footer class="sv-footer"><div class="sv-container"><div class="sv-footer-top"><div><a class="sv-brand" href="#inicio"><svg class="sv-brand-mark"><use href="#sv-logo"/></svg><span><strong>vovó lita</strong><small>SÍTIO & CHÁCARA</small></span></a><p>Seu próximo respiro no campo. <br>Miraflor · Itapevi, SP.</p></div><div class="sv-footer-links"><span>EXPLORE O SÍTIO</span><a href="#o-sitio">O Sítio</a><a href="#galeria">Galeria de fotos</a><a href="#estrutura">Nossa estrutura</a></div><div class="sv-footer-links"><span>PLANEJE SUA ESTADIA</span><a href="#precos">Valores e pacotes</a><a href="#localizacao">Como chegar</a><a href="#duvidas">Perguntas frequentes</a></div><div class="sv-footer-links"><span>VAMOS CONVERSAR</span><button class="sv-footer-social" data-whatsapp type="button"><svg class="sv-icon"><use href="#sv-whatsapp"/></svg>WhatsApp</button><small data-whatsapp-display></small><button class="sv-footer-social" id="sv-instagram-button" type="button"><svg class="sv-icon"><use href="#sv-instagram"/></svg>Instagram</button></div></div><div class="sv-footer-bottom"><p>© <span id="sv-year">2026</span> Sítio Vovó Lita. Todos os direitos reservados.</p><p>Desenvolvido por <strong>Solodev Studio</strong></p></div><p class="sv-demo-note">Prévia do site: comodidades e acomodações aguardam confirmação. Os espaços de avaliações serão preenchidos com depoimentos reais.</p></div></footer>
+  <footer class="sv-footer"><div class="sv-container"><div class="sv-footer-top"><div><a class="sv-brand" href="#inicio"><svg class="sv-brand-mark"><use href="#sv-logo"/></svg><span><strong>vovó lita</strong><small>SÍTIO & CHÁCARA</small></span></a><p>Seu próximo respiro no campo. <br>Miraflor · Itapevi, SP.</p></div><div class="sv-footer-links"><span>EXPLORE O SÍTIO</span><a href="#o-sitio">O Sítio</a><a href="#galeria">Galeria de fotos</a><a href="#estrutura">Nossa estrutura</a></div><div class="sv-footer-links"><span>PLANEJE SUA ESTADIA</span><a href="#precos">Valores e pacotes</a><a href="#localizacao">Como chegar</a><a href="#duvidas">Perguntas frequentes</a></div><div class="sv-footer-links"><span>VAMOS CONVERSAR</span><button class="sv-footer-social" data-whatsapp type="button"><svg class="sv-icon"><use href="#sv-whatsapp"/></svg>WhatsApp</button><small data-whatsapp-display></small><button class="sv-footer-social" id="sv-instagram-button" type="button"><svg class="sv-icon"><use href="#sv-instagram"/></svg>Instagram</button></div></div><div class="sv-footer-bottom"><p>© <span id="sv-year">2026</span> Sítio Vovó Lita. Todos os direitos reservados.</p><p>Desenvolvido por <strong>Solodev Studio</strong></p></div></div></footer>
   <!-- ======================================== FOOTER - FIM ======================================== -->
 
   <!-- WHATSAPP FLUTUANTE: espaço próprio no mobile para não cobrir o conteúdo. -->

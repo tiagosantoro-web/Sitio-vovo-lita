@@ -131,8 +131,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 100px; -webkit-text-size-adj
 /* ======================================== VISTA AÉREA (DRONE) - INÍCIO ======================================== */
 .sv-drone-grid { display: grid; grid-template-columns: 1.6fr 1fr; grid-template-rows: repeat(2, 230px); gap: 12px; }
 .sv-drone-slot { position: relative; margin: 0; overflow: hidden; border-radius: 5px; background: #e4e8da; }.sv-drone-slot:first-child { grid-row: span 2; }.sv-drone-slot > img { height: 100%; }
-.sv-drone-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; height: 100%; border: 1px dashed #aab99e; border-radius: 5px; color: #65735a; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }.sv-drone-empty .sv-icon { width: 32px; height: 32px; }
-@media (max-width: 680px) { .sv-drone-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 150px; gap: 8px; }.sv-drone-slot:first-child { grid-row: auto; grid-column: span 2; }.sv-drone-empty { font-size: 9px; text-align: center; padding: 8px; } }
+@media (max-width: 680px) { .sv-drone-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 150px; gap: 8px; }.sv-drone-slot:first-child { grid-row: auto; grid-column: span 2; } }
 /* ======================================== VISTA AÉREA (DRONE) - FIM ======================================== */
 
 /* ======================================== ESTRUTURA - INÍCIO ======================================== */
